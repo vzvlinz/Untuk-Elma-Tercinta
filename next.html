@@ -97,6 +97,73 @@
             background-color: white;
             color: black;
             margin: auto;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-areas:
+                    "top-left"
+                    "top-right"
+                    "button"
+                    "bottom-left"
+                    "bottom-right"
+                    "bottom-text";
+            }
+
+            .box {
+                width: 100px;
+                height: 150px;
+            }
+
+            .text {
+                padding: 10px;
+                font-size: 12px;
+            }
+
+            .button {
+                padding: 8px 16px;
+                font-size: 13px;
+            }
+
+            .text-bottom {
+                position: static;
+                margin-top: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                grid-template-areas:
+                    "top-left"
+                    "top-right"
+                    "button"
+                    "bottom-left"
+                    "bottom-right"
+                    "bottom-text";
+                gap: 10px;
+            }
+
+            .box {
+                width: 80px;
+                height: 120px;
+            }
+
+            .text {
+                padding: 5px;
+                font-size: 10px;
+            }
+
+            .button {
+                padding: 6px 12px;
+                font-size: 11px;
+            }
+
+            .text-bottom {
+                position: static;
+                margin-top: 10px;
+                font-size: 10px;
+            }
         }
     </style> 
 </head> 
